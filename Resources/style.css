@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header section */
+
+header {
+    min-height: 95vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(10, 6, 6, 0.8), rgba(12, 11, 11, 0.2)), url(./Media/pexels-brigitte-tohm-131058.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    margin: 0 auto;
+    width: 92%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    /* width: 15%; */
+    flex: 1;
+}
+
+.logo-text p {
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 1.8px;
+}
+
+nav ul {
+    /* width: 50%; */
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li>a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+nav ul li>a:hover {
+    border-bottom: 3px solid orange;
+}
+
+
+.order-button {
+    /* width: 15%; */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-button button {
+    padding: 8px 10px;
+    color: white;
+    background-color: rgb(230, 153, 10);
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.7px;
+}
+
+.toggle-nav {
+    display: none;
+}
+
+.slogan {
+    text-align: center;
+    width: 30%;
+    margin-top: 4%;
+    margin-left: 10px;
+}
+
+.slogan h1 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 3em;
+}
+
+.slogan p {
+    letter-spacing: 0.6px;
+    font-size: 0.87rem;
+    color: rgb(230, 226, 226);
+}
+
+@media only screen and (max-width: 933px) {
+    nav ul {
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+        color: white;
+        font-size: 1.3rem;
+        /* flex: 0.2; */
+    }
+
+    .logo-text {
+        flex: 2;
+    }
+
+    .order-button {
+        /* width: 15%; */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    header {
+        min-height: 100vh;
+    }
+
+    .slogan h1 {
+        font-size: 2.5em;
+    }
+
+    .slogan p {
+        font-size: 0.77rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .slogan h1 {
+        font-size: 2.2em;
+    }
+
+    .slogan p {
+        font-size: 0.68rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-position: 43%;
+    }
+
+    .slogan {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .slogan h1 {
+        display: none;
+    }
+
+    .slogan p {
+        position: relative;
+        top: 250px;
+        right: 10px;
+        font-size: 0.85rem;
+    }
+
+    .toggle-nav {
+        flex: 0.4;
+        text-align: right;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .slogan p {
+        right: 0px;
+    }
+}
+
+/* main section */
+
+main {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    margin-top: 30px;
+    width: 92%;
+}
+
+/* about us sub-section */
+
+.about-us {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.mobile_about-us_heading {
+    display: none;
+}
+
+.about-us_img {
+    margin-top: 50px;
+    width: 40%;
+    /* flex: 1; */
+}
+
+.about-us_img>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-us_text {
+    margin-top: 50px;
+    width: 55%;
+    /* flex: 1.5; */
+    color: #000;
+}
+
+.about-us_text h2 {
+    font-size: 1.9rem;
+    letter-spacing: 0.87px;
+    margin-bottom: 15px;
+}
+
+.about-us_text p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+aside {
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background-color: rgb(230, 153, 10);
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.7px;
+    padding: 8px 10px;
+    color: white;
+}
+
+.about-us_order-now {
+    display: none;
+}
+
+@media only screen and (max-width: 1170px) {
+    .about-us_text h2 {
+        font-size: 1.7rem;
+    }
+    
+    .about-us_text p {
+        font-size: 0.87rem;
+        line-height: 1.7;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .read-more {
+        display: none;
+    }
+
+    .about-us_text {
+        margin-top: 45px;
+    }
+
+    .about-us_text p {
+        line-height: 1.8;
+    }
+}
+
+@media only screen and (max-width: 933px) {
+    aside {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .about-us_text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us_text p {
+        font-size: 0.77rem;
+        line-height: 1.75;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .about-us {
+        display: block;
+    }
+
+    .about-us_text h2 {
+        display: none;
+    }
+
+    .mobile_about-us_heading {
+        display: block;
+        color: black;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .about-us_img {
+        padding-top: 30px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about-us_text {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .about-us_text p {
+        line-height: 2.3;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    .order-button {
+        display: none;
+    }
+
+    .about-us_order-now {
+        display: block;
+        padding: 8px 10px;
+        color: white;
+        background-color: rgb(230, 153, 10);
+        border: none;
+        border-radius: 5px;
+        letter-spacing: 0.7px;
+        margin-top: 10px;
+    }
+}
+
+
+/* best sellers sub-section */
+
+.best-sellers {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.best-sellers_text {
+    margin-top: 65px;
+    text-align: center
+}
+
+.best-sellers_text h2 {
+    font-size: 1.9rem;
+    letter-spacing: 0.87px;
+    margin-bottom: 7px;
+}
+
+.best-sellers_text p {
+    font-size: 0.9rem;
+}
+
+.best-sellers_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.coffee-type {
+    width: 23%;
+}
+
+.coffee-type_img {
+    width: 100%;
+}
+
+.coffee-type_img>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.coffee-type h3 {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+}
+
+.coffee-type span {
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 1170px) {
+    .best-sellers_text h2 {
+        font-size: 1.7rem;
+    }
+
+    .best-sellers_text p {
+        font-size: 0.77rem;
+    }
+
+    .best-sellers_text {
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (max-width: 933px) {
+    .coffee-type h3 {
+        margin-top: 8px;
+        font-size: 0.85rem;
+    }
+    
+    .coffee-type span {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .best-sellers_text h2 {
+        font-size: 1.5rem;
+    }
+
+    .best-sellers_text p {
+        font-size: 0.77rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .coffee-type h3 {
+        margin-top: 7px;
+        font-size: 0.75rem;
+    }
+    
+    .coffee-type span {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .best-sellers_content {
+        display: block;
+    }
+
+    .coffee-type {
+        box-shadow: 1px 1px 10px #c1bfbf;
+        padding: 30px 20px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .coffee-type_img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cafe-au-lait,
+    .irish-coffee,
+    .red-eye {
+        margin-bottom: 20px;
+    }
+
+    .coffee-type h3, 
+    .coffee-type span {
+        padding-left: 10%;
+    }
+
+    .coffee-type h3 {
+        font-size: 0.95rem;
+    }
+
+    .coffee-type span {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .coffee-type h3 {
+        font-size: 0.75rem;
+    }
+
+    .coffee-type span {
+        font-size: 0.7rem;
+    }
+}
+
+/* footer section */
+
+footer {
+    background-color: black;
+    height: 60px;
+    margin-top: 50px;
+}
+
+.footer-con {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 25px;
+}
+
+.fa-brands:hover {
+    color: rgb(177, 176, 176);
+}
+
+.location {
+    color: white;
+}
+
+.fa-location-dot {
+    color: white;
+    margin-right: 5px;
+}
+
+.location span {
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+}
+
+.copyright {
+    color: #939393;
+}
+
+.fa-copyright {
+    font-size: 1rem;
+}
+
+.copyright span {
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+}
+
+@media only screen and (max-width: 830px) {
+    .fa-brands {
+        font-size: 1.2rem;
+    }
+    
+    .fa-location-dot {
+        font-size: 0.9rem;
+    }
+
+    .location span {
+        font-size: 0.8rem;
+    }
+    
+    .fa-copyright {
+        font-size: 0.8rem;
+    }
+    
+    .copyright span {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    .location {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .copyright {
+        display: none;
+    }
+
+    .footer-con {
+        justify-content: center;
+    }
+}
