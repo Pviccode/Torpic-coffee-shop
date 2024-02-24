@@ -15,8 +15,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     /* position: absolute; */
-    overflow-x: hidden;
-    overflow-y: auto;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
 }
 
 /* Header section */
@@ -169,8 +169,8 @@ nav ul li>a:hover {
 
 @media only screen and (max-width: 600px) {
     header {
-        min-height: 450px;
-        /* background-position: 43%; */
+        min-height: 70vh;
+        background-position: 43%;
     }
 
     .slogan {
