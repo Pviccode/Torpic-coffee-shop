@@ -16,9 +16,9 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    position: fixed;
-    overflow-y: scroll;
+    /* height: 100%; */
+    /* position: fixed; */
+    /* overflow-y: scroll; */
 }
 
 /* Header section */
