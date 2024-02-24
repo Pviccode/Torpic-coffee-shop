@@ -265,14 +265,14 @@ nav {
     }
 
     .sidebar-container {
-        left: 60%;
+        left: 20%;
     }
 
 }
 
 @media only screen and (max-width: 480px) {
     .sidebar-container {
-        left: 50%;
+        /* left: 50%; */
     }
 }
 
@@ -282,7 +282,7 @@ nav {
     }
 
     .sidebar-container {
-        left: 40%;
+        /* left: 40%; */
     }
 }
 
