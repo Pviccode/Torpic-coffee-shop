@@ -167,7 +167,7 @@ nav ul li>a:hover {
 @media only screen and (max-width: 600px) {
     header {
         min-height: 60vh;
-        background-position: 43%;
+        /* background-position: 43%; */
     }
 
     .slogan {
