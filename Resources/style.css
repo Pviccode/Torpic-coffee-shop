@@ -10,15 +10,15 @@
 
 html {
     font-size: 18px;
-    /* overflow: hidden; */
-    /* width: 100%; */
+    overflow: hidden;
+    width: 100%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* height: 100%; */
-    /* position: fixed; */
-    /* overflow-y: scroll; */
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
 }
 
 /* Header section */
