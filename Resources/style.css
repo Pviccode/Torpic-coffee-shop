@@ -147,7 +147,7 @@ nav ul li>a:hover {
 
 @media only screen and (max-width: 830px) {
     header {
-        min-height: 100vh;
+        min-height: 430px;
     }
 
     .slogan h1 {
@@ -159,7 +159,7 @@ nav ul li>a:hover {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 680px){
     .slogan h1 {
         font-size: 2.2em;
     }
@@ -169,7 +169,7 @@ nav ul li>a:hover {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     header {
         min-height: 90vh;
         background-position: 42.5%;
@@ -340,7 +340,7 @@ aside {
 
     .about-us_img {
         padding-top: 30px;
-        width: 85%;
+        width: 75%;
         margin: 0 auto;
     }
 
@@ -351,6 +351,12 @@ aside {
 
     .about-us_text p {
         line-height: 2.3;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-us_img {
+        width: 85%;
     }
 }
 
