@@ -172,7 +172,7 @@ nav ul li>a:hover {
 @media only screen and (max-width: 600px) {
     header {
         min-height: 90vh;
-        background-position: 44.5%;
+        background-position: 46%;
     }
 
     .slogan {
@@ -186,7 +186,7 @@ nav ul li>a:hover {
 
     .slogan p {
         position: relative;
-        top: 300px;
+        top: 350px;
         right: 0px;
         font-size: 0.85rem;
     }
